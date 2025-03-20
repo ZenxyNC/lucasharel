@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lucasharel/static/css/main.f0f52d35.css",
-    "main.js": "/lucasharel/static/js/main.47521704.js",
+    "main.css": "/lucasharel/static/css/main.a5d280c4.css",
+    "main.js": "/lucasharel/static/js/main.b1895d23.js",
     "static/js/453.e136cccd.chunk.js": "/lucasharel/static/js/453.e136cccd.chunk.js",
     "static/media/Lucas.jpg": "/lucasharel/static/media/Lucas.294abcd484592310f191.jpg",
     "static/media/card.glb": "/lucasharel/static/media/card.7c85588cbc759ee346a9.glb",
@@ -14,12 +14,12 @@
     "static/media/lanyard.png": "/lucasharel/static/media/lanyard.046a209608671c0fc20d.png",
     "index.html": "/lucasharel/index.html",
     "static/media/arrowdown.svg": "/lucasharel/static/media/arrowdown.94b9283482b8723da95baf0721a07de7.svg",
-    "main.f0f52d35.css.map": "/lucasharel/static/css/main.f0f52d35.css.map",
-    "main.47521704.js.map": "/lucasharel/static/js/main.47521704.js.map",
+    "main.a5d280c4.css.map": "/lucasharel/static/css/main.a5d280c4.css.map",
+    "main.b1895d23.js.map": "/lucasharel/static/js/main.b1895d23.js.map",
     "453.e136cccd.chunk.js.map": "/lucasharel/static/js/453.e136cccd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0f52d35.css",
-    "static/js/main.47521704.js"
+    "static/css/main.a5d280c4.css",
+    "static/js/main.b1895d23.js"
   ]
 }
