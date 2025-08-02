@@ -45,6 +45,12 @@ export default function Contact() {
             isOpened: true,
             message: 'Message sent.',
             duration: 3000
+          });
+
+          setUserForm({
+            name: '',
+            email: '',
+            message: ''
           })
         },
         (error) => {
@@ -138,6 +144,7 @@ export default function Contact() {
                 ...userForm,
                 name: e.target.value
               })}
+              autoComplete="off"
             />
           </GlassSurface>
 
@@ -172,6 +179,7 @@ export default function Contact() {
                 ...userForm,
                 email: e.target.value
               })}
+              autoComplete="off"
             />
           </GlassSurface>
 
@@ -206,6 +214,7 @@ export default function Contact() {
                 ...userForm,
                 message: e.target.value
               })}
+              autoComplete="off"
             />
           </GlassSurface>
           <button type="submit" id="contact-input-submit">Send</button>
