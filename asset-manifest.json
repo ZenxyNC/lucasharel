@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/lucasharel/static/css/main.2ccf57ed.css",
-    "main.js": "/lucasharel/static/js/main.117691ec.js",
+    "main.css": "/lucasharel/static/css/main.9032ca11.css",
+    "main.js": "/lucasharel/static/js/main.8f0aeb13.js",
     "static/js/453.ad7768ec.chunk.js": "/lucasharel/static/js/453.ad7768ec.chunk.js",
     "static/media/card.glb": "/lucasharel/static/media/card.9507798f4cb0033456e5.glb",
+    "static/media/mesh-949.png": "/lucasharel/static/media/mesh-949.419df19f75cf2786dd72.png",
     "static/media/lucas.jpg": "/lucasharel/static/media/lucas.ded4cad40ef9381017f0.jpg",
     "static/media/PlusJakartaSans-SemiBold.ttf": "/lucasharel/static/media/PlusJakartaSans-SemiBold.cf92107f36f071f6384c.ttf",
     "static/media/PlusJakartaSans-Medium.ttf": "/lucasharel/static/media/PlusJakartaSans-Medium.f78ffc04acb877ce387e.ttf",
@@ -14,12 +15,12 @@
     "static/media/lanyard.png": "/lucasharel/static/media/lanyard.bee7603f97ab2440e256.png",
     "index.html": "/lucasharel/index.html",
     "static/media/tabler_arrow-up.svg": "/lucasharel/static/media/tabler_arrow-up.939ed8884bc3cb6cc590.svg",
-    "main.2ccf57ed.css.map": "/lucasharel/static/css/main.2ccf57ed.css.map",
-    "main.117691ec.js.map": "/lucasharel/static/js/main.117691ec.js.map",
+    "main.9032ca11.css.map": "/lucasharel/static/css/main.9032ca11.css.map",
+    "main.8f0aeb13.js.map": "/lucasharel/static/js/main.8f0aeb13.js.map",
     "453.ad7768ec.chunk.js.map": "/lucasharel/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ccf57ed.css",
-    "static/js/main.117691ec.js"
+    "static/css/main.9032ca11.css",
+    "static/js/main.8f0aeb13.js"
   ]
 }
