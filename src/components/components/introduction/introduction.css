@@ -261,9 +261,13 @@
     font-size: 18px;
     text-align: left;
 
-    max-height: unset;
-    overflow: unset;
-    word-wrap: unset;
+    max-height: calc(100% - 120px);
+    overflow: scroll;
+    word-wrap: break-word;
+  }
+
+  p::-webkit-scrollbar {
+    display: none;
   }
 
   #introduction-getintouch {

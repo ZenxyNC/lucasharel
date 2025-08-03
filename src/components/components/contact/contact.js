@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react"
 import Beams from "./components/beams"
-import GlassSurface from "./components/glass"
 import emailjs from '@emailjs/browser'
 import SnackbarExample from "./components/snackbar";
 
 
 export default function Contact() {
   const [isMobile, setIsMobile] = useState(true);
-  const [inputMargin, setInputMargin] = useState(15)
   const [userForm, setUserForm] = useState({
     name: '',
     email: '',
@@ -76,8 +74,7 @@ export default function Contact() {
   useEffect(() => {
     function handleResize() {
       const newIsMobile = window.innerWidth <= 999;
-      setIsMobile(newIsMobile); // No need for ternary operator
-      setInputMargin(newIsMobile ? 15 : 5);
+      setIsMobile(newIsMobile);
     }
     
     window.addEventListener('resize', handleResize);
@@ -113,27 +110,7 @@ export default function Contact() {
           id="contact-form"
           onSubmit={(e) => sendMail(e)}
         >
-          <GlassSurface
-            width = {isMobile ? '100%' : 'calc(50% - 10px)'}
-            height = {50}
-            borderRadius = {40}
-            borderWidth = {0.1}
-            brightness = {70}
-            opacity = {1}
-            blur = {50}
-            displace = {5}
-            backgroundOpacity = {0.08}
-            saturation = {0.7}
-            distortionScale = {-180}
-            redOffset = {0}
-            greenOffset = {10}
-            blueOffset = {30}
-            xChannel = "R"
-            yChannel = "G"
-            mixBlendMode = "difference"
-            style={{ marginBottom: `${inputMargin}px` }}
-          >
-            <input 
+          <input 
               type="text" 
               id="contact-input-name" 
               placeholder="Name"
@@ -146,28 +123,7 @@ export default function Contact() {
               })}
               autoComplete="off"
             />
-          </GlassSurface>
 
-          <GlassSurface
-            width = {isMobile ? '100%' : 'calc(50% - 10px)'}
-            height = {50}
-            borderRadius = {40}
-            borderWidth = {0.1}
-            brightness = {70}
-            opacity = {1}
-            blur = {50}
-            displace = {5}
-            backgroundOpacity = {0.08}
-            saturation = {0.7}
-            distortionScale = {-180}
-            redOffset = {0}
-            greenOffset = {10}
-            blueOffset = {30}
-            xChannel = "R"
-            yChannel = "G"
-            mixBlendMode = "difference"
-            style={{ marginBottom: `${inputMargin}px` }}
-          >
             <input 
               type="email" 
               id="contact-input-email" 
@@ -181,32 +137,11 @@ export default function Contact() {
               })}
               autoComplete="off"
             />
-          </GlassSurface>
 
-          <GlassSurface
-            width = "100%"
-            height = {`${isMobile ? 'calc(100% - 130px - 50px - 15px)' : 'calc(100% - 140px)'}`}
-            borderRadius = {`${isMobile ? 30 : 30}`}
-            borderWidth = {0.1}
-            brightness = {70}
-            opacity = {1}
-            blur = {50}
-            displace = {5}
-            backgroundOpacity = {0.08}
-            saturation = {0.7}
-            distortionScale = {-180}
-            redOffset = {0}
-            greenOffset = {10}
-            blueOffset = {30}
-            xChannel = "R"
-            yChannel = "G"
-            mixBlendMode = "difference"
-            style={{ marginBottom: `${inputMargin}px` }}
-          >
             <textarea 
               type="email" 
               id="contact-input-ideas" 
-              placeholder={`${userForm.name === "" ? 'Share your ideas, but tell us your name first.' : `Any ideas, ${userForm.name}?`}`}
+              placeholder={`${userForm.name.trim() === "" ? 'Share your ideas, but tell us your name first.' : `Any ideas, ${userForm.name}?`}`}
               required
 
               value={userForm.message}
@@ -216,7 +151,6 @@ export default function Contact() {
               })}
               autoComplete="off"
             />
-          </GlassSurface>
           <button type="submit" id="contact-input-submit">Send</button>
         </form>
       </div>

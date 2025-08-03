@@ -39,13 +39,15 @@
   width: calc(100% - 60px);
   height: calc(500px - 60px);
 
-  background-color: var(--primary-transparent);
-
   border-radius: 30px;
 
   overflow: hidden;
 
-  padding: 30px
+  padding: 30px;
+
+  background-image: url('../../../resource/mesh-949.png');
+  background-size: 1620px;
+  background-position: center;
 }
 
 .cards-image {
@@ -61,6 +63,18 @@
   transform: translate(-50%, -50%);
 
   transition: 0.15s
+}
+
+img {
+  border: none;
+  outline: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+
+  background-color: transparent;
 }
 
 #cards-contentwrapper {
