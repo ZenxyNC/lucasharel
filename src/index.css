@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  background-color: transparent;
+  font-family: PlusJakarta;
+  font-weight: bold;
+  --color-scheme: light dark;
+  --color-accent: #007AFF;
+  --color-accent-light: #0064D0;
+  --color-primary: #F5F5F5;
+  --color-primary-transparent: rgba(245, 245, 245, 0.40);
+  --color-secondary: #171C23;
+  --color-secondary-transparent: rgba(23, 28, 35, 0.40);
+  --color-font: #0F131A;
+  --color-border: rgba(23, 28, 35, 0.6);
+  --color-shadow: rgba(15, 19, 26, 0.3);
+  --color-dotgrid-bg: #0F131A;
+  --color-dotgrid-base: #F5F5F5;
+  --color-dotgrid-active: #007AFF;
+
+  --radius-outerradius: 28px;
+  --radius-innerradius: 12px;
+}
+
+@media screen and (min-width: 48rem) {
+  :root {
+    --radius-outerradius: 32px;
+    --radius-innerradius: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.dark {
+    --color-accent-light: #56A7FF;
+    --color-primary: #0F131A;
+    --color-primary-transparent: rgb(15, 19, 26, 0.40);
+    --color-secondary: #171C23;
+    --color-secondary-transparent: rgba(23, 28, 35, 0.40);
+    --color-font: #F5F5F5;
+    --color-border: rgba(255, 255, 255, 0.2);
+    --color-dotgrid-bg: #F5F5F5;
+    --color-dotgrid-base: #0F131A;
+  }
+}
+
+@theme {
+  --spacing-0: 0;
+
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-primary: var(--color-primary);
+  --color-primary-transparent: var(--color-primary-transparent);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-transparent: var(--color-secondary-transparent);
+  --color-font: var(--color-font);
+  --color-border: var(--color-border);
+  --color-shadow: var(--color-shadow);
+  --color-dotgrid-bg: var(--color-dotgrid-bg);
+  --color-dotgrid-base: var(--color-dotgrid-base);
+  --color-dotgrid-active: var(--color-dotgrid-active);
+
+  --radius-outerradius: var(--radius-outerradius);
+  --radius-innerradius: var(--radius-innerradius);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+html, body {
+  background-color: var(--color-primary);
+  color: var(--color-font);
+  transition: 0.3s;
+  overflow-x: hidden;
+}
