@@ -10,10 +10,10 @@ import { CgFileDocument } from "react-icons/cg";
 
 export default function Contact({ currentTheme = "light" }) {
   const [rootColors, setRootColors] = useState({
-    bgColor: "#F5F5F5",
-    baseColor: "#0F131A",
+    bgColor: "#0F131A",
+    baseColor: "#F5F5F5",
     activeColor: "#007AFF",
-    borderColor: "rgba(23, 28, 35, 0.6)"
+    borderColor: "rgba(245, 245, 245, 0.2)"
   });
 
   useEffect(() => {
@@ -39,17 +39,25 @@ export default function Contact({ currentTheme = "light" }) {
   return (
     <>
       <div id="get-in-touch" className={`
-        w-full aspect-square bg-[${rootColors.bgColor}] rounded-outerradius border border-border
+        w-full aspect-square rounded-outerradius border border-border
         md:aspect-[unset] md:h-[480px] md:mb-[200px]
-      `}>
+      `}
+      style={{
+        backgroundColor: rootColors.bgColor
+      }}
+      >
         <div id="content-wrapper" className="
           w-[calc(100%-2px)] h-[calc(100%-2px)] p-[24px_24px_24px_24px] absolute
           md:flex md:justify-evenly md:items-center md:gap-[16%]
         ">
           <h1 className={`
-            text-[${rootColors.baseColor}] text-left font-[PlusJakarta] font-black text-[32px] z-10 absolute
+             text-left font-[PlusJakarta] font-black text-[32px] z-10 absolute
             md:text-[52px] md:relative
-          `}>
+          `}
+          style={{
+            color: rootColors.baseColor
+          }}
+          >
             Let's <br className="hidden md:block"/>Create <br/>Something <br className="hidden md:block"/>Creative
           </h1>
           <div className="
