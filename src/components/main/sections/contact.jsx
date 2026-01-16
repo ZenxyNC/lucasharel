@@ -75,16 +75,16 @@ export default function Contact({ currentTheme = "light" }) {
             />
             <ContactButton
               icon={<MdMailOutline size="28px" color={rootColors.baseColor}/>}
-              title="lucasharel@gmail.com"
-              url="mailto:lucasharel@gmail.com"
+              title="lucasharelw@gmail.com"
+              url="mailto:lucasharelw@gmail.com"
               borderColor={rootColors.borderColor}
               bgColor={rootColors.bgColor}
               fontColor={rootColors.baseColor}
             />
             <ContactButton
-              icon={<CgFileDocument size="28px" color={rootColors.baseColor}/>}
-              title="ZenDocs"
-              url="https://zenxync.github.io/zendocs/search"
+              icon={<img src="https://raw.githubusercontent.com/ZenxyNC/zendocs/refs/heads/main/public/resources/AppIcon/zenapps.png" className="w-[28px] h-[28px] rounded-[4px]" alt="" />}
+              title="ZenApps"
+              url="https://zenxync.github.io/zenapps/"
               borderColor={rootColors.borderColor}
               bgColor={rootColors.bgColor}
               fontColor={rootColors.baseColor}
