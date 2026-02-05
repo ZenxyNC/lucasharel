@@ -4,7 +4,7 @@ export default function ProjectBox({ appicon, appurl, appname, appdescription })
   return (
     <div className="
       pointer-events-auto
-      w-full h-[full] pl-4 pr-4 pt-4 pb-5 rounded-outerradius border border-border backdrop-blur-md relative cursor-pointer
+      w-full h-[full] pl-4 pr-4 pt-4 pb-5 rounded-outerradius border border-border backdrop-blur-lg relative cursor-pointer
       md:w-[calc(50%-14px)] md:h-[240px] md:pl-5 md:pr-5 md:pt-5 md:pb-5
       hover:scale-[1.02]  transition-all duration-400 ease-[cubic-bezier(.40,3,.41,.8)]
     "

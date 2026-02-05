@@ -61,8 +61,8 @@ export default function Main() {
           magnetRadius={80}
           ringRadius={12}
           waveSpeed={0.1}
-          waveAmplitude={2}
-          particleSize={2}
+          waveAmplitude={1.5}
+          particleSize={1.8}
           lerpSpeed={1}
           color="#007aff"
           autoAnimate={false}
@@ -76,11 +76,11 @@ export default function Main() {
       </div>
 
       <div id="smooth-wrapper" ref={wrapper} className="pointer-events-none">
-        <div 
+        <div
           id="smooth-content" ref={content}
           className="
-            w-dvw flex flex-col gap-[120px] max-w-[500px] p-8 absolute pointer-events-none
-            md:w-100svw md:gap-[200px] md:max-w-none md:p-0
+            w-dvw max-w-[500px] flex flex-col gap-[120px] p-8 relative mx-auto pointer-events-none
+            md:w-100svw md:gap-[200px] md:max-w-none md:p-0 md:mx-0
         ">
           <div id="introduction-wrapper" className="w-vw h-svh relative bg-transparent pointer-events-none">
             <div id="introduction" className="
