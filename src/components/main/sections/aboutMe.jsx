@@ -43,7 +43,7 @@ export default function AboutMe() {
             font-[PlusJakarta] font-medium text-[16px]
             md:text-[18px]
           ">
-            I’m Lucas Harel. I'm currently 17 Years old and I have been learning design and coding since I was 14 years old. I’m an Intermediate Frontend Developer, Junior Backend Developer, and UI/UX Designer with 3+ years of coding experience. I’m currently focusing on Modern Web Design and improving my skills in Full-stack development along with intense learning and practices.
+            I’m Lucas Harel. I'm currently 17 years old, I have been learning design and coding since I was 14 years old. I’m an Intermediate Frontend Developer, Junior Backend Developer, and UI/UX Designer with 3+ years of coding experience. I’m currently focusing on Modern Web Design and improving my skills in Full-stack development along with intense learning and practices.
           </p>
         </AboutBox>
         <AboutBox title="Skills">

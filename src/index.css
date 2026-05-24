@@ -7,6 +7,8 @@
   --color-scheme: light dark;
   --color-accent: #007AFF;
   --color-accent-light: #0064D0;
+  --color-busy: #d8a600;
+  --color-notavailable: #FF393D;
   --color-primary: #F5F5F5;
   --color-primary-transparent: rgba(245, 245, 245, 0.40);
   --color-secondary: #171C23;
