@@ -4,7 +4,7 @@ import TechChip from "../components/techChip.jsx";
 
 
 export default function SelfIntro() {
-  const currentStatus = "Busy"
+  const currentStatus = "Available"
 
   return (
     <div className="
